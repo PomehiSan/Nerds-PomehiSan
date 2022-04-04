@@ -15,7 +15,8 @@
   --special-gray: #dfdfdf;
   --special-darkgrey: #d5d5d5;
 
-  --active-button-text: rgba(255, 255, 255, 0.3);
+  --active-button-white-text: rgba(255, 255, 255, 0.3);
+  --active-button-black-text: rgba(0, 0, 0, 0.3);
 
   --basic-app-button: #00ca74;
   --hover-app-button: #00bc6c;
@@ -42,6 +43,10 @@
   background-color: var(--basic-white);
 }
 
+.inner-page {
+  color: var(--basic-black);
+}
+
 .link {
   text-decoration: none;
 }
@@ -49,6 +54,16 @@
 .image {
   max-width: 100%;
   height: auto;
+}
+
+/* Main header */
+
+.page-catalog .page-title {
+  background-color: var(--basic-verylightgrey);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
 }
 
 /* Main navigation */
@@ -79,6 +94,33 @@
 .cart:active {
   color: var(--basic-black);
   opacity: .3;
+}
+
+/* Filters */
+
+.filter-legend {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-price {
+  color: var(--basic-dark);
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.price-input {
+  background-color: var(--basic-verylightgrey);
+  border: none;
+}
+
+.filter-list {
+  list-style: none;
+  line-height: 20px;
+  color: var(--basic-dark);
 }
 
 /* Slides */
@@ -162,7 +204,22 @@
 
 .button:active{
   background-color: var(--special-darkred);
-  color: var(--active-button-text);
+  color: var(--active-button-white-text);
+}
+
+.button-filter{
+  background-color: var(--basic-verylightgrey);
+  color: var(--basic-black);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--special-gray);
+}
+
+.button-filter:active {
+  background-color: var(--special-darkgrey);
+  color: var(--active-button-black-text);
 }
 
 .button-apps {
