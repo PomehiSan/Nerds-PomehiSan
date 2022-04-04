@@ -1,0 +1,241 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #283136;
+  --basic-greydark: #444444;
+  --basic-grey: #4d4d4d;
+  --basic-lightgrey: #666666;
+  --basic-verylightgrey: #eeeeee;
+  --basic-lightred: #fb565a;
+  --basic-white: #ffffff;
+
+  --special-red: #e74246;
+  --special-darkred: #d7373b;
+  --special-gray: #dfdfdf;
+  --special-darkgrey: #d5d5d5;
+
+  --active-button-text: rgba(255, 255, 255, 0.3);
+
+  --basic-app-button: #00ca74;
+  --hover-app-button: #00bc6c;
+  --active-app-button: #00aa62;
+
+  --basic-presentation-button: #efc849;
+  --hover-presentation-button: #eab534;
+  --active-presentation-button: #e5a722;
+
+  --basic-border-input: #D7DCDE;
+  --hover-border-input: #b4b9bb;
+}
+
+/* Global */
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-verylightgrey);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation .link,
+.cart {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.site-navigation .link:hover,
+.cart:hover {
+  color: var(--basic-lightred);
+}
+
+.site-navigation .link:active,
+.cart:active {
+  color: var(--basic-black);
+  opacity: .3;
+}
+
+/* Slides */
+
+.features-slides {
+  background-color: var(--basic-verylightgrey);
+}
+
+/* Features */
+
+.slide-item-head {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+/* Services */
+.services-header {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: var(--basic-black);
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* About */
+
+.about-slogan {
+  color: var(--basic-black);
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-services {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-statistic-head {
+  color: var(--basic-black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-statistic-value {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.about-statistic-name {
+  line-height: 18px;
+  margin: 0px;
+}
+
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* Button */
+.button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-lightred);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--special-red);
+}
+
+.button:active{
+  background-color: var(--special-darkred);
+  color: var(--active-button-text);
+}
+
+.button-apps {
+  background-color: var(--basic-app-button);
+}
+
+.button-apps:hover,
+.button-apps:focus {
+  background-color: var(--hover-app-button);
+}
+
+.button-apps:active {
+  background-color: var(--active-app-button);
+}
+
+.button-presentations {
+  background-color: var(--basic-presentation-button);
+}
+
+.button-presentations:hover,
+.button-presentations:focus {
+  background-color: var(--hover-presentation-button);
+}
+
+.button-presentations.cart:active {
+  background-color: var(--active-presentation-button);
+}
+
+/* contacts */
+
+.footer-contacts {
+  color: var(--basic-lightgrey);
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.contacts-studio-name {
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Social */
+
+.social-benefit {
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.social-benefit-description {
+  line-height: 22px;
+  color: var(--basic-greydark);
+}
+
+/* Modal-Contact */
+
+.modal-contact-item-input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic-border-input);
+  border-radius: 3px;
+}
+
+.modal-contact-item-input:hover {
+  border-color: var(--hover-border-input);
+}
+
+.modal-contact-item-label {
+  font-weight: 700;
+}
+
+

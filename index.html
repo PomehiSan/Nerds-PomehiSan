@@ -1,160 +1,304 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Дизайн-студия Nёrd's</title>
-    </head>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Дизайн-студия Nёrd's</title>
 
-<body>
-    <header>
-        <nav>
-            <a>
-                <img src="https://via.placeholder.com/160x87" width="160" height="87" alt="">
-            </a>
-            <ul>
-                <li>
-                    <a href="blank.html">СТУДИЯ</a>
-                </li>
-                <li>
-                    <a href="blank.html">КЛИЕНТЫ</a>
-                </li>
-                <li>
-                    <a href="catalog.html">МАГАЗИН</a>                   
-                </li>
-                <li>
-                    <a href="blank.html">КОНТАКТЫ</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="blank.html">КОРЗИНА</a>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img class="image"
+            src="img/logo/nerds-logo-optimized.png"
+            width="160"
+            height="65"
+            alt="логотип"
+          />
+        </a>
+        <ul class="site-navigation">
+          <li>
+            <a class="link" href="blank.html">Студия</a>
+          </li>
+          <li>
+            <a class="link" href="blank.html">Клиенты</a>
+          </li>
+          <li>
+            <a class="link" href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a class="link" href="blank.html">Контакты</a>
+          </li>
+        </ul>
+        <a class="cart link" href="blank.html">Корзина</a>
+      </nav>
     </header>
-    <main>
-        <h1>Дизайн-студия Nёrd's</h1>
-        <section>
-            <h2>О дизайн студии Nёrd's</h2>
-            <div>
-                <p><b>Долго, дорого, скрупулезно.</b></p>
-                <p>
-                    Математически выверенный дизайн<br>
-                    для вашего сайта или мобильного приложения.
-                </p>
-                <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-                <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="смартфоны на фоне">
-            </div>
-            <div>
-                <p><b>Любим математику<br>как никто другой</b></p>
-                <p>
-                    Никакого креатива, только математические формулы<br>
-                    для расчета идеальных пропорций.
-                </p>
-                <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-                <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="компьютеры">
-            </div>
-            <div>
-                <p><b>Только ночь, <br>только хардкор</b></p>
-                <p>
-                    Работать днем, как все? Мы против этого. <br>
-                    Ближе к полуночи работа только начинается.
-                </p>
-                <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-                <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="планшеты">
-            </div>
-        </section>
-        <section>
-            <h2>НАШИ УСЛУГИ</h2>
-            <ul>
-                <li>
-                    <p><img src="https://via.placeholder.com/300x146" width="360" height="146" alt="веб-сайта на ноутбуке"></p>
-                    <h3>ВЕБ-САЙТЫ</h3>
-                    <p>
-                        Мир ни когда не будет прежним<br>
-                        после того как увидит ваш сайт!
-                    </p>
-                    <a href="blank.html">ЗАКАЗАТЬ</a>
-                </li>
-                <li>
-                    <p><img src="https://via.placeholder.com/300x146" width="360" height="146" alt="приложение на смартфоне"></p>
-                    <h3>ПРИЛОЖЕНИЯ</h3>
-                    <p>
-                        Покорите топ-10 приложений<br>
-                        в AppStore и Google Play
-                    </p>
-                    <a href="blank.html">ЗАКАЗАТЬ</a>
-                </li>
-                <li>
-                    <p><img src="https://via.placeholder.com/300x146" width="360" height="146" alt="презентация на доске"></p>                    
-                    <h3>ПРЕЗЕНТАЦИИ</h3>
-                    <p>
-                        Вы даже не подозреваете,<br>
-                        насколько вы изумительны!
-                    </p>
-                    <a href="blank.html">ЗАКАЗАТЬ</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>О НАС</h2>
+
+    <main class="container">
+      <h1>Дизайн-студия Nёrd's</h1>
+
+      <section class="features-slides">
+        <h2>Преимущества Nёrd's</h2>
+
+        <div class="slide-item">
+          <h3 class="slide-item-head">Долго, дорого, скрупулезно.</h3>
+          <p>
+            Математически выверенный дизайн<br />
+            для вашего сайта или мобильного приложения.
+          </p>
+          <a class="button link button-slider" href="blank.html">Узнать больше</a>
+          <img class="image"
+            src="img/slider/nerds-slide-phones.png"
+            width="760"
+            height="431"
+            alt="смартфоны"
+          />
+        </div>
+        <div class="slide-item">
+          <h3 class="slide-item-head">Любим математику<br />как никто другой</h3>
+          <p>
+            Никакого креатива, только математические формулы<br />
+            для расчета идеальных пропорций.
+          </p>
+          <a class="button link button-slider" href="blank.html">Узнать больше</a>
+          <img class="image"
+            src="img/slider/nerds-slide-computers.png"
+            width="760"
+            height="431"
+            alt="компьютеры"
+          />
+        </div>
+        <div class="slide-item">
+          <h3 class="slide-item-head">Только ночь, <br />только хардкор</h3>
+          <p>
+            Работать днем, как все? Мы против этого. <br />
+            Ближе к полуночи работа только начинается.
+          </p>
+          <a class="button link button-slider" href="blank.html">Узнать больше</a>
+          <img class="image"
+            src="img/slider/nerds-slide-tablet-and-phone.png"
+            width="760"
+            height="431"
+            alt="планшеты"
+          />
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>Наши услуги</h2>
+
+        <ul class="services-list">
+          <li class="services-item">
+            <h3 class="services-header">Веб-сайты</h3>
             <p>
-                <b>Мы - маленькая, но гордая<br>
-                дизайн-студия из Краснодара.</b>
+              Мир ни когда не будет прежним<br />
+              после того как увидит ваш сайт!
             </p>
+            <a class="button button-websites link" href="blank.html">Заказать</a>
             <p>
-                Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.
+              <img class="image"
+                src="img/services/web-site-services.png"
+                width="300"
+                height="146"
+                alt="веб-сайт на ноутбуке"
+              />
             </p>
-            <p><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b></p>
-                <ul>
-                    <li>Веб-сайтов любой сложности</li>
-                    <li>Мобильных приложений для iOS и Android</li>
-                    <li>Слайдшоу и видео для корпоративных презентаций</li>
-                </ul>         
-                <img src="https://via.placeholder.com/360x208" width="360" height="208" alt="цветной логотип компании">               
-                <p><b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b></p>
-                    <dl>
-                        <dt><b>146<sup>%</sup></b></dt>
-                            <dd>Уровень<br>самоотдачи</dd>
-                        <dt><b>100<sup>%</sup></b></dt>
-                            <dd>Соблюдение<br>сроков</dd>
-                        <dt><b>50<sup>%</sup></b></dt>
-                            <dd>Минимальная<br>предоплата</dd>
-                    </dl>          
-        </section>
-        <section>
-            <h2>КЛИЕНТЫ</h2>
-            <ul>
-                <li>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/209x90" width="209" height="90" alt="логотип HTMLacademy"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://via.placeholder.com/209x90" width="209" height="90" alt="логотип Borodinski"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://via.placeholder.com/209x90" width="209" height="90" alt="логотип Pink"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="https://via.placeholder.com/209x90" width="209" height="90" alt="логотип Mishka"></a>
-                </li>
-            </ul>
-        </section>
+          </li>
+          <li class="services-item">
+            <h3 class="services-header">Приложения</h3>
+            <p>
+              Покорите топ-10 приложений<br />
+              в AppStore и Google Play
+            </p>
+            <a class="button button-apps link" href="blank.html">Заказать</a>
+            <p>
+              <img class="image"
+                src="img/services/apps-services.png"
+                width="300"
+                height="146"
+                alt="приложение на смартфоне"
+              />
+            </p>
+          </li>
+          <li class="services-item">
+            <h3 class="services-header">Презентации</h3>
+            <p>
+              Вы даже не подозреваете,<br />
+              насколько вы изумительны!
+            </p>
+            <a class="button button-presentations link" href="blank.html"
+              >Заказать</a
+            >
+            <p>
+              <img class="image"
+                src="img/services/presentations-services.png"
+                width="300"
+                height="146"
+                alt="презентация на доске"
+              />
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about">
+        <h2>О нас</h2>
+
+        <p class="about-slogan">
+          Мы - маленькая, но гордая<br />
+          дизайн-студия из Краснодара.
+        </p>
+        <p>
+          Исповедуем принципы минимализма и чистоты. Ставим математический
+          расчет<br />
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <p class="about-services">Выполняем заказы на разработку:</p>
+        <ul class="about-services-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+
+        <img class="image"
+          src="img/logo/nerds-illustration.png"
+          width="360"
+          height="208"
+          alt="логотип"
+        />
+        <p class="about-statistic-head"><b>С 2004 года любим точность во всем:</b></p>
+        <dl class="about-statistic">
+          <dt class="about-statistic-value">
+            146<sup class="percent">%</sup>
+          </dt>
+          <dd class="about-statistic-name">Уровень<br />самоотдачи</dd>
+          <dt class="about-statistic-value">
+            100<sup class="percent">%</sup>
+          </dt>
+          <dd class="about-statistic-name">Соблюдение<br />сроков</dd>
+          <dt class="about-statistic-value">
+            50<sup class="percent">%</sup>
+          </dt>
+          <dd class="about-statistic-name">Минимальная<br />предоплата</dd>
+        </dl>
+      </section>
+
+      <section class="clients">
+        <h2>Клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+              ><img class="image"
+                src="img/clients/logo_htmlacademy.svg"
+                width="199"
+                height="57"
+                alt="HTMLacademy"
+            /></a>
+          </li>
+          <li class="clients-item">
+            <a href="#"
+              ><img class="image"
+                src="img/clients/borodinski-logo.png"
+                width="199"
+                height="57"
+                alt="Borodinski"
+            /></a>
+          </li>
+          <li class="clients-item">
+            <a href="#"
+              ><img class="image"
+                src="img/clients/pink-logo.png"
+                width="199"
+                height="57"
+                alt="Pink"
+            /></a>
+          </li>
+          <li class="clients-item">
+            <a href="#"
+              ><img class="image"
+                src="img/clients/mishka-logo.png"
+                width="199"
+                height="57"
+                alt="Mishka"
+            /></a>
+          </li>
+        </ul>
+      </section>
+
     </main>
-    <footer>
-        <section>
-            <h2>КОНТАКТЫ</h2>
-            <p><b>NЁRDS DESIGN STUDIO</b></p>
-            <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
-            <p><a href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <button type="button">НАПИШИТЕ НАМ</button>
-            <img src="https://via.placeholder.com/1440x416" width="1440" height="416" alt="карта как нас найти">
-        </section>
-        <section>
-            <h2>Социальные сети</h2>
-            <ul>
-                <li><a href="#"><img src="https://via.placeholder.com/81x81" width="81" height="81" alt="логотип VK"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/81x81" width="81" height="81" alt="логотип FACEBOOK"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/81x81" width="81" height="81" alt="логотип INSTAGRAM"></a></li>
-            </ul>
-            <p><b>Давайте дружить, это выгодно!</b></p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <h2>Контакты</h2>
+        <p class="contacts-studio-name">Nёrds design studio</p>
+        <p>
+          наб. Реки Карповки,<br />
+          5 лит П, Санкт-Петербург
+        </p>
+        <p><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
+        <button class="button" type="button">Напишите нам</button>
+      </section>
+
+      <section class="footer-map">
+        <h2>Как нас найти</h2>
+        <img class="image" src="img/map.png" width="1440" height="416" alt="карта" />
+      </section>
+
+      <section class="footer-social">
+        <h2>Социальные сети</h2>
+        <ul>
+          <li>
+            <a class="social-button link" href="#">
+              Вконтакте
+            </a>
+          </li>
+          <li>
+            <a class="social-button link" href="#">
+              Фейсбук
+            </a>
+          </li>
+          <li>
+            <a class="social-button link" href="#">
+              Инстаграм
+            </a>
+          </li>
+        </ul>
+        <p class="social-benefit">Давайте дружить, это выгодно!</p>
+        <p class="social-benefit-desription">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
     </footer>
-</body>
+
+    <section class="modal modal-contact">
+      <h2 class="modal-contact-head">Напишите нам</h2>
+      <form class="modal-contact-form" action="#" method="post">
+        <p class="modal-contact-item">
+          <label for="contact-fullname" class="modal-contact-item-label">Ваше имя:</label>
+            <input class="modal-contact-item-input" type="text" name="fullname" id="contact-fullname" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-contact-item">
+          <label for="contact-email" class="modal-contact-item-label">Ваш email:</label>
+            <input class="modal-contact-item-input" type="email" name="email" id="contact-email" placeholder="email@example.com">
+
+        </p>
+        <p class="modal-contact-item">
+          <label for="contact-text" class="modal-contact-item-label">Текст письма:</label>
+            <textarea class="modal-contact-item-input" name="text" rows="10" cols="50"  id="contact-text" placeholder="В свободной форме">
+            </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+  </body>
 </html>
