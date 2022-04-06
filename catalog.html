@@ -38,7 +38,7 @@
             <a class="link" href="blank.html">Клиенты</a>
           </li>
           <li>
-            <a class="link" href="catalog.html">Магазин</a>
+            <a class="link active-page" href="catalog.html">Магазин</a>
           </li>
           <li>
             <a class="link" href="blank.html">Контакты</a>
@@ -139,22 +139,23 @@
           <button class="button button-filter" type="submit">Показать</button>
         </form>
       </section>
-      <section>
+
+      <section class="sorting">
         <h2>Сортирововка</h2>
-        Сортировать:
-        <ul>
+        <p  class="filter-legend">Сортировать:</p>
+        <ul class="sorting-list">
           <li>
-            <a href="#">По цене</a>
+            <a class="link sorting-list-item" href="#">По цене</a>
           </li>
           <li>
-            <a href="#">По типу</a>
+            <a class="link sorting-list-item" href="#">По типу</a>
           </li>
           <li>
-            <a href="#">По названию</a>
+            <a class="link sorting-list-item" href="#">По названию</a>
           </li>
           <li>
-            <a href="#">
-              <img
+            <a class="sort-ico descending-sort" href="#">
+              <img class="image"
                 src="https://via.placeholder.com/11x10"
                 width="11"
                 height="10"
@@ -163,8 +164,8 @@
             </a>
           </li>
           <li>
-            <a href="#">
-              <img
+            <a class="sort-ico ascending-sort" href="#">
+              <img class="image"
                 src="https://via.placeholder.com/11x10"
                 width="11"
                 height="10"
@@ -174,16 +175,17 @@
           </li>
         </ul>
       </section>
-      <section>
+
+      <section class="catalog">
         <h2>Список шаблонов</h2>
-        <ul>
-          <li>
-            <h3><a href="#">Sedona</a></h3>
+        <ul class="template-list">
+          <li class="template-item">
+            <a class="link" href="#"><h3 class="template-name">Sedona</h3></a>
             <p>
               Информационный сайт<br />
               для туристов
             </p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
             <p>
               <img
                 src="img\sample-cards\img-sedona.jpg"
@@ -193,13 +195,13 @@
               />
             </p>
           </li>
-          <li>
-            <h3><a href="#">Pink app</a></h3>
+          <li class="template-item">
+            <a class="link" href="#"><h3 class="template-name">Pink app</h3></a>
             <p>
               Продуктовый лендинг<br />
               приложения для iOS и Android
             </p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
             <p>
               <img
                 src="img\sample-cards\img-pink.jpg"
@@ -209,13 +211,13 @@
               />
             </p>
           </li>
-          <li>
-            <h3><a href="#">Barbershop</a></h3>
+          <li class="template-item">
+            <a class="link" href="#"><h3 class="template-name">Barbershop</h3></a>
             <p>
               Сайт салона красоты.<br />
               Для мужчин. Да
             </p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
             <p>
               <img
                 src="img\sample-cards\img-barbershop.jpg"
@@ -225,13 +227,13 @@
               />
             </p>
           </li>
-          <li>
-            <h3><a href="#">Mishka</a></h3>
+          <li class="template-item">
+            <a class="link" href="#"><h3 class="template-name">Mishka</h3></a>
             <p>
               Интернет-магазин<br />
               вязанных игрушек
             </p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
             <p>
               <img
                 src="img\sample-cards\img-mishka.jpg"
@@ -241,13 +243,13 @@
               />
             </p>
           </li>
-          <li>
-            <h3><a href="#">A plus</a></h3>
+          <li class="template-item">
+            <a class="link" href="#"><h3 class="template-name">A plus</h3></a>
             <p>
               Лендинг курсов повышения<br />
               квалификации
             </p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
             <p>
               <img
                 src="img\sample-cards\img-aplus.jpg"
@@ -257,13 +259,13 @@
               />
             </p>
           </li>
-          <li>
-            <h3><a href="#">Кваст</a></h3>
+          <li class="template-item">
+            <a class="link" href="#"><h3 class="template-name">Кваст</h3></a>
             <p>
               Промо-сайт производителя<br />
               крафтового кваса
             </p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
             <p>
               <img
                 src="img\sample-cards\img-kvast.jpg"
@@ -274,18 +276,18 @@
             </p>
           </li>
         </ul>
-        <ul>
+        <ul class="catalog-pagination">
           <li>
-            <a>1</a>
+            <a class="button button-catalog-pagination-active-page">1</a>
           </li>
           <li>
-            <a href="#">2</a>
+            <a class="link button button-catalog-pagination" href="#">2</a>
           </li>
           <li>
-            <a href="#">3</a>
+            <a class="link button button-catalog-pagination" href="#">3</a>
           </li>
           <li>
-            <a href="#">Следующая</a>
+            <a class="link button button-catalog-pagination" href="#">Следующая</a>
           </li>
         </ul>
       </section>
