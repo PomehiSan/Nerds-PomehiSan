@@ -478,7 +478,7 @@
 
 .footer-where-we {
   display: grid;
-  grid-template-columns: 140px auto 140px;
+  grid-template-columns: auto 1160px auto;
   grid-template-rows: auto;
   margin-bottom: 68px;
 }
