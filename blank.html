@@ -21,9 +21,8 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img
-            class="image"
+        <a class="main-header-logo" href="index.html">
+          <img class="image"
             src="img/logo/nerds-logo-optimized.png"
             width="160"
             height="65"
@@ -48,46 +47,58 @@
       </nav>
     </header>
 
-    <main><p>В разработке...</p></main>
+    <main class="container"><p>В разработке...</p></main>
 
     <footer class="main-footer">
-      <section class="footer-contacts">
-        <h2>Контакты</h2>
-        <p class="contacts-studio-name">Nёrds design studio</p>
-        <p>
-          наб. Реки Карповки,<br />
-          5 лит П, Санкт-Петербург
-        </p>
-        <p><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
-        <button class="button" type="button">Напишите нам</button>
-      </section>
+      <div class="footer-where-we">
+        <h2 class="hidden-element">Контакты</h2>
+        <section class="footer-contacts container">
+          <div class="contacts-container">
+            <p class="contacts-studio-name">Nёrds design studio</p>
+            <p class="contacts-adress">
+              наб. Реки Карповки,<br />
+              5 лит П, Санкт-Петербург
+            </p>
+            <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
+            <button class="button footer-contacts-button" type="button">Напишите нам</button>
+          </div>
+        </section>
 
-      <section class="footer-map">
-        <h2>Как нас найти</h2>
-        <img class="image" src="img/map.png" width="1440" height="416" alt="карта" />
-      </section>
+        <section class="footer-map">
+          <h2  class="hidden-element">Как нас найти</h2>
+          <img class="image" src="img/map.png" width="1440" height="416" alt="карта" />
+        </section>
+      </div>
 
-      <section class="footer-social">
-        <h2>Социальные сети</h2>
-        <ul>
+      <section class="footer-social container">
+        <h2 class="hidden-element">Социальные сети</h2>
+        <ul class="footer-social-buttons">
           <li>
             <a class="social-button link" href="#">
-              Вконтакте
+              <svg width="81px" height="81px">
+                <circle class="social-button-background" cx="50%" cy="50%" r="40"></circle>
+              </svg>
             </a>
           </li>
           <li>
             <a class="social-button link" href="#">
-              Фейсбук
+              <svg width="81" height="81">
+                <circle class="social-button-background" cx="50%" cy="50%" r="40"></circle>
+              </svg>
             </a>
           </li>
           <li>
             <a class="social-button link" href="#">
-              Инстаграм
+              <svg width="81" height="81">
+                <circle class="social-button-background" cx="50%" cy="50%" r="40"></circle>
+              </svg>
             </a>
           </li>
         </ul>
-        <p class="social-benefit">Давайте дружить, это выгодно!</p>
-        <p class="social-benefit-desription">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social-column">
+          <p class="social-benefit">Давайте дружить, это выгодно!</p>
+          <p class="social-benefit-description">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
 
