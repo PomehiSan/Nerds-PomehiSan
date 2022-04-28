@@ -21,7 +21,7 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a href="index.html" class="main-logo">
           <img class="image"
             src="img/logo/nerds-logo-optimized.png"
             width="160"
@@ -29,42 +29,50 @@
             alt="логотип"
           />
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation-list">
           <li>
-            <a class="link" href="blank.html">Студия</a>
+            <a class="site-navigation-item link" href="blank.html">Студия</a>
           </li>
           <li>
-            <a class="link" href="blank.html">Клиенты</a>
+            <a class="site-navigation-item link" href="blank.html">Клиенты</a>
           </li>
           <li>
-            <a class="link" href="catalog.html">Магазин</a>
+            <a class="site-navigation-item link" href="catalog.html">Магазин</a>
           </li>
           <li>
-            <a class="link" href="blank.html">Контакты</a>
+            <a class="site-navigation-item link" href="blank.html">Контакты</a>
           </li>
         </ul>
         <a class="cart link" href="blank.html">Корзина</a>
       </nav>
     </header>
 
-    <main class="container"><p>В разработке...</p></main>
+    <main class="">
+      <div class="page-title-bar">
+        <h1 class="page-title container">В разработке</h1>
+      </div>
+    </main>
 
-    <footer class="main-footer">
-      <div class="footer-where-we">
+    <footer class="footer">
+
+      <div class="footer-location">
         <h2 class="hidden-element">Контакты</h2>
-        <section class="footer-contacts container">
-          <div class="contacts-container">
-            <p class="contacts-studio-name">Nёrds design studio</p>
-            <p class="contacts-adress">
-              наб. Реки Карповки,<br />
-              5 лит П, Санкт-Петербург
-            </p>
-            <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <button class="button footer-contacts-button" type="button">Напишите нам</button>
-          </div>
-        </section>
 
-        <section class="footer-map">
+        <div class="container">
+          <section class="location-contacts">
+            <div class="contacts-content">
+              <p class="contacts-studio-name">Nёrds design studio</p>
+              <p class="contacts-adress">
+                наб. Реки Карповки,<br />
+                5 лит П, Санкт-Петербург
+              </p>
+              <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
+              <button class="button footer-contacts-button" type="button">Напишите нам</button>
+            </div>
+          </section>
+        </div>
+
+        <section class="location-map">
           <h2  class="hidden-element">Как нас найти</h2>
           <img class="image" src="img/map.png" width="1440" height="416" alt="карта" />
         </section>
@@ -72,55 +80,48 @@
 
       <section class="footer-social container">
         <h2 class="hidden-element">Социальные сети</h2>
-        <ul class="footer-social-buttons">
-          <li>
-            <a class="social-button link" href="#">
-              <svg width="81px" height="81px">
-                <circle class="social-button-background" cx="50%" cy="50%" r="40"></circle>
-              </svg>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link link" href="#">
+              <img class="social-ico" src="img/social-icons/vk.svg" width="26" height="15" />
             </a>
           </li>
-          <li>
-            <a class="social-button link" href="#">
-              <svg width="81" height="81">
-                <circle class="social-button-background" cx="50%" cy="50%" r="40"></circle>
-              </svg>
+          <li class="social-item">
+            <a class="social-link link" href="#">
+              <img class="social-ico" src="img/social-icons/facebook.svg" width="12" height="22" />
             </a>
           </li>
-          <li>
-            <a class="social-button link" href="#">
-              <svg width="81" height="81">
-                <circle class="social-button-background" cx="50%" cy="50%" r="40"></circle>
-              </svg>
+          <li class="social-item">
+            <a class="social-link link" href="#">
+              <img class="social-ico" src="img/social-icons/instagram.svg" width="21" height="21" />
             </a>
           </li>
         </ul>
-        <div class="social-column">
+        <div class="social-description">
           <p class="social-benefit">Давайте дружить, это выгодно!</p>
           <p class="social-benefit-description">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </footer>
 
-    <section class="modal modal-contact">
-      <h2 class="modal-contact-head">Напишите нам</h2>
-      <form class="modal-contact-form" action="#" method="post">
-        <p class="modal-contact-item">
-          <label for="contact-fullname" class="modal-contact-item-label">Ваше имя:</label>
-            <input class="modal-contact-item-input" type="text" name="fullname" id="contact-fullname" placeholder="Имя Фамилия">
+    <section class="modal modal-appeal">
+      <h2 class="appeal-head">Напишите нам</h2>
+      <form class="appeal-form" action="#" method="post">
+        <p class="appeal-item">
+          <label for="appeal-fullname" class="appeal-item-label">Ваше имя:</label>
+          <input class="appeal-item-input appeal-fullname-input" type="text" name="fullname" id="appeal-fullname" placeholder="Имя Фамилия">
         </p>
-        <p class="modal-contact-item">
-          <label for="contact-email" class="modal-contact-item-label">Ваш email:</label>
-            <input class="modal-contact-item-input" type="email" name="email" id="contact-email" placeholder="email@example.com">
-
+        <p class="appeal-item">
+          <label for="appeal-email" class="appeal-item-label">Ваш email:</label>
+          <input class="appeal-item-input appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
         </p>
-        <p class="modal-contact-item">
-          <label for="contact-text" class="modal-contact-item-label">Текст письма:</label>
-            <textarea class="modal-contact-item-input" name="text" rows="10" cols="50"  id="contact-text" placeholder="В свободной форме"></textarea>
+        <p class="appeal-item appeal-text">
+          <label for="appeal-text" class="appeal-item-label">Текст письма:</label>
+          <textarea class="appeal-item-input" name="text" rows="5" id="appeal-text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="close hidden-element" type="button">Закрыть</button>
     </section>
 
   </body>
