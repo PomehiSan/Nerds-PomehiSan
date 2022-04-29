@@ -53,53 +53,60 @@
         <div class="container">
           <section class="slides">
             <h2 class="hidden-element">Преимущества Nёrd's</h2>
-            <div class="slides-item">
-              <div class="slide-text">
-                <h3 class="slide-head">Долго, дорого,<br> скрупулезно.</h3>
-                <p class="slide-description">
-                  Математически выверенный дизайн<br />
-                  для вашего сайта или мобильного приложения.
-                </p>
-                <a class="button link slide-button" href="blank.html">Узнать больше</a>
-              </div>
-              <img class="image"
-                src="img/slider/nerds-slide-phones.png"
-                width="760"
-                height="431"
-                alt="смартфоны"
-              />
-            </div>
-            <div class="slides-item">
-              <div class="slide-text">
-                <h3 class="slide-head">Любим математику<br />как никто другой</h3>
-                <p class="slide-description">
-                  Никакого креатива, только математические формулы<br />
-                  для расчета идеальных пропорций.
-                </p>
-                <a class="button link slide-button" href="blank.html">Узнать больше</a>
-              </div>
-              <img class="image"
-                src="img/slider/nerds-slide-computers.png"
-                width="760"
-                height="431"
-                alt="компьютеры"
-              />
-            </div>
-            <div class="slides-item">
-              <div class="slide-text">
-                <h3 class="slide-head">Только ночь, <br />только хардкор</h3>
-                <p class="slide-description">
-                  Работать днем, как все? Мы против этого. <br />
-                  Ближе к полуночи работа только начинается.
-                </p>
-                <a class="button link slide-button" href="blank.html">Узнать больше</a>
-              </div>
-              <img class="image"
-                src="img/slider/nerds-slide-tablet-and-phone.png"
-                width="760"
-                height="431"
-                alt="планшеты"
-              />
+            <ul class="slides-list">
+              <li class="slides-item slide slide-current">
+                <div class="slide-text">
+                  <h3 class="slide-head">Долго, дорого,<br> скрупулезно.</h3>
+                  <p class="slide-description">
+                    Математически выверенный дизайн<br />
+                    для вашего сайта или мобильного приложения.
+                  </p>
+                  <a class="button link slide-button" href="blank.html">Узнать больше</a>
+                </div>
+                <img class="image"
+                  src="img/slider/nerds-slide-phones.png"
+                  width="760"
+                  height="431"
+                  alt="смартфоны"
+                />
+              </li>
+              <li class="slides-item slide">
+                <div class="slide-text">
+                  <h3 class="slide-head">Любим математику<br />как никто другой</h3>
+                  <p class="slide-description">
+                    Никакого креатива, только математические формулы<br />
+                    для расчета идеальных пропорций.
+                  </p>
+                  <a class="button link slide-button" href="blank.html">Узнать больше</a>
+                </div>
+                <img class="image"
+                  src="img/slider/nerds-slide-computers.png"
+                  width="760"
+                  height="431"
+                  alt="компьютеры"
+                />
+              </li>
+              <li class="slides-item slide">
+                <div class="slide-text">
+                  <h3 class="slide-head">Только ночь, <br />только хардкор</h3>
+                  <p class="slide-description">
+                    Работать днем, как все? Мы против этого. <br />
+                    Ближе к полуночи работа только начинается.
+                  </p>
+                  <a class="button link slide-button" href="blank.html">Узнать больше</a>
+                </div>
+                <img class="image"
+                  src="img/slider/nerds-slide-tablet-and-phone.png"
+                  width="760"
+                  height="431"
+                  alt="планшеты"
+                />
+              </li>
+            </ul>
+            <div class="slides-controls">
+              <button class="slides-controls-button slides-control-current" type="button" aria-label="Первый слайд"></button>
+              <button class="slides-controls-button" type="button" aria-label="Второй слайд"></button>
+              <button class="slides-controls-button" type="button" aria-label="Третий слайд"></button>
             </div>
           </section>
         </div>
@@ -315,7 +322,7 @@
         </p>
         <button class="button appeal-button" type="submit">Отправить</button>
       </form>
-      <button class="close hidden-element" type="button">Закрыть</button>
+      <button class="close" type="button" aria-label="закрыть"></button>
     </section>
 
   </body>

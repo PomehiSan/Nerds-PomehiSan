@@ -37,7 +37,7 @@
             <a class="site-navigation-item link" href="blank.html">Клиенты</a>
           </li>
           <li>
-            <a class="site-navigation-item link" href="catalog.html">Магазин</a>
+            <a class="site-navigation-item link active-page" href="catalog.html">Магазин</a>
           </li>
           <li>
             <a class="site-navigation-item link" href="blank.html">Контакты</a>
@@ -63,7 +63,14 @@
           >
             <fieldset class="fieldset filter-price">
               <legend class="filter-legend">Стоимость:</legend>
-              <div class="price-range">
+              <div class="range-controls">
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 64%; left: 0%;"></div>
+                  <div class="range-toggle range-toggle-min" tabindex="0" style="left: 0%;"></div>
+                  <div class="range-toggle range-toggle-max" tabindex="0" style="left: 64%;"></div>
+                </div>
+              </div>
+              <div class="price-control">
                 <label from="filter-price-label price-lower">От</label>
                 <input
                   class="price-input"
@@ -167,6 +174,7 @@
           <h2 class="hidden-element">Список шаблонов</h2>
           <ul class="template-list">
             <li class="template-item">
+              <img class="template-browser" class src="img/sample-cards/browser.svg" />
               <div class="template-overlay">
                 <a class="link" href="#"><h3 class="template-name">Sedona</h3></a>
                 <p class="template-description">
@@ -175,7 +183,7 @@
                 </p>
                 <button class="button template-button" type="button">9 900 Р</button>
               </div>
-                <img
+                <img class="image"
                   src="img\sample-cards\img-sedona.jpg"
                   width="358"
                   height="578"
@@ -183,6 +191,7 @@
                 />
             </li>
             <li class="template-item">
+              <img class="template-browser" class src="img/sample-cards/browser.svg" />
               <div class="template-overlay">
                 <a class="link" href="#"><h3 class="template-name">Pink app</h3></a>
                 <p class="template-description">
@@ -191,14 +200,15 @@
                 </p>
                 <button class="button template-button" type="button">9 900 Р</button>
               </div>
-                <img
-                  src="img\sample-cards\img-pink.jpg"
-                  width="358"
-                  height="578"
-                  alt="pink-app"
-                />
+              <img class="image"
+                src="img\sample-cards\img-pink.jpg"
+                width="358"
+                height="578"
+                alt="pink-app"
+              />
             </li>
             <li class="template-item">
+              <img class="template-browser" class src="img/sample-cards/browser.svg" />
               <div class="template-overlay">
                 <a class="link" href="#"><h3 class="template-name">Barbershop</h3></a>
                 <p class="template-description">
@@ -207,7 +217,7 @@
                 </p>
                 <button class="button template-button" type="button">9 900 Р</button>
               </div>
-                <img
+                <img class="image"
                   src="img\sample-cards\img-barbershop.jpg"
                   width="358"
                   height="578"
@@ -215,6 +225,7 @@
                 />
             </li>
             <li class="template-item">
+              <img class="template-browser" class src="img/sample-cards/browser.svg" />
               <div class="template-overlay">
                 <a class="link" href="#"><h3 class="template-name">Mishka</h3></a>
                 <p class="template-description">
@@ -223,7 +234,7 @@
                 </p>
                 <button class="button template-button" type="button">9 900 Р</button>
               </div>
-                <img
+                <img class="image"
                   src="img\sample-cards\img-mishka.jpg"
                   width="358"
                   height="578"
@@ -231,6 +242,7 @@
                 />
             </li>
             <li class="template-item">
+              <img class="template-browser" class src="img/sample-cards/browser.svg" />
               <div class="template-overlay">
                 <a class="link" href="#"><h3 class="template-name">A plus</h3></a>
                 <p class="template-description">
@@ -239,7 +251,7 @@
                 </p>
                 <button class="button template-button" type="button">9 900 Р</button>
               </div>
-                <img
+                <img class="image"
                   src="img\sample-cards\img-aplus.jpg"
                   width="358"
                   height="578"
@@ -247,6 +259,7 @@
                 />
             </li>
             <li class="template-item">
+              <img class="template-browser" class src="img/sample-cards/browser.svg" />
               <div class="template-overlay">
                 <a class="link" href="#"><h3 class="template-name">Кваст</h3></a>
                 <p class="template-description">
@@ -255,11 +268,11 @@
                 </p>
                 <button class="button template-button" type="button">9 900 Р</button>
               </div>
-                <img
+                <img class="image"
                   src="img\sample-cards\img-kvast.jpg"
                   width="358"
                   height="578"
-                  alt="A plus"
+                  alt="Kvast"
                 />
             </li>
           </ul>
@@ -341,7 +354,7 @@
         </p>
         <p class="appeal-item">
           <label for="appeal-email" class="appeal-item-label">Ваш email:</label>
-          <input class="appeal-item-input appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
+          <input class="appeal-item-input error appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
         </p>
         <p class="appeal-item appeal-text">
           <label for="appeal-text" class="appeal-item-label">Текст письма:</label>
@@ -349,7 +362,7 @@
         </p>
         <button class="button appeal-button" type="submit">Отправить</button>
       </form>
-      <button class="close hidden-element" type="button">Закрыть</button>
+      <button class="close" type="button" aria-label="закрыть"></button>
     </section>
   </body>
 </html>
