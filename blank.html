@@ -10,7 +10,7 @@
     />
 
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
 
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
@@ -31,7 +31,7 @@
         </a>
         <ul class="site-navigation-list">
           <li>
-            <a class="site-navigation-item link" href="blank.html">Студия</a>
+            <a class="site-navigation-item link" href="index.html">Студия</a>
           </li>
           <li>
             <a class="site-navigation-item link" href="blank.html">Клиенты</a>
@@ -58,8 +58,14 @@
       <div class="footer-location">
         <h2 class="hidden-element">Контакты</h2>
 
+        <section class="location-map">
+          <h2  class="hidden-element">Как нас найти</h2>
+          <div class="location-image-map"></div>
+          <iframe class="location-interactive-map" src="https://yandex.ru/map-widget/v1/-/CCUFV0toSA" height="416" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+        </section>
+
         <div class="container">
-          <section class="location-contacts">
+          <div class="location-contacts">
             <div class="contacts-content">
               <p class="contacts-studio-name">Nёrds design studio</p>
               <p class="contacts-adress">
@@ -69,13 +75,8 @@
               <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
               <button class="button footer-contacts-button" type="button">Напишите нам</button>
             </div>
-          </section>
+          </div>
         </div>
-
-        <section class="location-map">
-          <h2  class="hidden-element">Как нас найти</h2>
-          <img class="image" src="img/map.png" width="1440" height="416" alt="карта" />
-        </section>
       </div>
 
       <section class="footer-social container">
@@ -83,17 +84,17 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link link" href="#">
-              <img class="social-ico" src="img/social-icons/vk.svg" width="26" height="15" />
+              <img class="social-ico" src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link link" href="#">
-              <img class="social-ico" src="img/social-icons/facebook.svg" width="12" height="22" />
+              <img class="social-ico" src="img/social-icons/facebook.svg" width="12" height="22" alt="facebook"/>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link link" href="#">
-              <img class="social-ico" src="img/social-icons/instagram.svg" width="21" height="21" />
+              <img class="social-ico" src="img/social-icons/instagram.svg" width="21" height="21" alt="instagram"/>
             </a>
           </li>
         </ul>
@@ -104,7 +105,7 @@
       </section>
     </footer>
 
-    <section class="modal modal-appeal">
+    <section class="modal modal-appeal hidden-element">
       <h2 class="appeal-head">Напишите нам</h2>
       <form class="appeal-form" action="#" method="post">
         <p class="appeal-item">
@@ -113,7 +114,7 @@
         </p>
         <p class="appeal-item">
           <label for="appeal-email" class="appeal-item-label">Ваш email:</label>
-          <input class="appeal-item-input error appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
+          <input class="appeal-item-input appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
         </p>
         <p class="appeal-item appeal-text">
           <label for="appeal-text" class="appeal-item-label">Текст письма:</label>
