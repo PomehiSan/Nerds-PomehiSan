@@ -41,7 +41,7 @@
             <a class="site-navigation-item link" href="catalog.html">Магазин</a>
           </li>
           <li>
-            <a class="site-navigation-item link" href="contact.html">Контакты</a>
+            <a class="site-navigation-item link active-page">Контакты</a>
           </li>
         </ul>
         <a class="cart link" href="blank.html">Корзина</a>
@@ -50,7 +50,27 @@
 
     <main class="">
       <div class="page-title-bar">
-        <h1 class="page-title container">В разработке</h1>
+        <h1 class="page-title container">Напишите нам</h1>
+      </div>
+
+      <div class="container">
+        <div class="modal modal-appeal modal-contact-page">
+          <form class="appeal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="appeal-item">
+              <label for="appeal-fullname" class="appeal-item-label">Ваше имя:</label>
+              <input class="appeal-item-input appeal-fullname-input" type="text" name="fullname" id="appeal-fullname" placeholder="Имя Фамилия">
+            </p>
+            <p class="appeal-item">
+              <label for="appeal-email" class="appeal-item-label">Ваш email:</label>
+              <input class="appeal-item-input appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
+            </p>
+            <p class="appeal-item appeal-text">
+              <label for="appeal-text" class="appeal-item-label">Текст письма:</label>
+              <textarea class="appeal-item-input" name="text" rows="5" id="appeal-text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button appeal-button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
 
       <div class="footer-location">
@@ -71,7 +91,6 @@
                 5 лит П, Санкт-Петербург
               </p>
               <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628" aria-label="Наш номер телефона: +7 800 555-86-28">+7 800 555-86-28</a></p>
-              <a href="contact.html" class="link button footer-contacts-button" aria-label="Написать нам">Напишите нам</a>
             </div>
           </div>
         </div>
@@ -104,27 +123,5 @@
         </div>
       </section>
     </footer>
-
-    <section class="modal modal-appeal">
-      <h2 class="appeal-head">Напишите нам</h2>
-      <form class="appeal-form" action="#" method="post">
-        <p class="appeal-item">
-          <label for="appeal-fullname" class="appeal-item-label">Ваше имя:</label>
-          <input class="appeal-item-input appeal-fullname-input" type="text" name="fullname" id="appeal-fullname" placeholder="Имя Фамилия">
-        </p>
-        <p class="appeal-item">
-          <label for="appeal-email" class="appeal-item-label">Ваш email:</label>
-          <input class="appeal-item-input appeal-email-input" type="email" name="email" id="appeal-email" placeholder="email@example.com">
-        </p>
-        <p class="appeal-item appeal-text">
-          <label for="appeal-text" class="appeal-item-label">Текст письма:</label>
-          <textarea class="appeal-item-input" name="text" rows="5" id="appeal-text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button appeal-button" type="submit">Отправить</button>
-      </form>
-      <button class="close" type="button" aria-label="закрыть"></button>
-    </section>
-
-    <script src="script/modal.min.js"></script>
   </body>
 </html>

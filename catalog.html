@@ -19,6 +19,7 @@
   </head>
 
   <body class="page-body inner-page">
+    <div class="background-modal hidden-element"></div>
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-logo">
@@ -40,7 +41,7 @@
             <a class="site-navigation-item link active-page">Магазин</a>
           </li>
           <li>
-            <a class="site-navigation-item link" href="blank.html">Контакты</a>
+            <a class="site-navigation-item link" href="contact.html">Контакты</a>
           </li>
         </ul>
         <a class="cart link" href="blank.html">Корзина</a>
@@ -66,8 +67,8 @@
               <div class="range-controls">
                 <div class="range-scale">
                   <div class="range-bar" style="width: 69%; left: 3%;"></div>
-                  <div class="range-toggle range-toggle-min" tabindex="0" style="left: 3%;"></div>
-                  <div class="range-toggle range-toggle-max" tabindex="0" style="left: 69%;"></div>
+                  <div class="range-toggle range-toggle-min" tabindex="0" style="left: 3%;" aria-label="Цена от"></div>
+                  <div class="range-toggle range-toggle-max" tabindex="0" style="left: 69%;" aria-label="Цена до"></div>
                 </div>
               </div>
               <div class="price-control">
@@ -78,6 +79,7 @@
                     type="text"
                     name="pricefrom"
                     placeholder="0"
+                    aria-label="Цена от, минимальная цена 0 рублей"
                   />
                 </div>
                 <div class="price-control-items">
@@ -87,6 +89,7 @@
                     type="text"
                     name="priceupto"
                     placeholder="150 000"
+                    aria-label="Цена до, максимальная цена 150000 рублей"
                   />
                 </div>
               </div>
@@ -161,12 +164,12 @@
           <ul class="sorting-type-list">
             <li class="sorting-type">
               <a class="sort-ico descending-sort sort-type-active" href="#">
-                <svg class="descending-sort-ico" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="sort-ico-path" d="M5.5 10 0 0h11" fill="#231F20"/></svg>
+                <svg role="img" aria-label="по убыванию" class="descending-sort-ico" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="sort-ico-path" d="M5.5 10 0 0h11" fill="#231F20"/></svg>
               </a>
             </li>
             <li  class="sorting-type">
               <a class="sort-ico" href="#">
-                <svg class="ascending-sort-ico" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="sort-ico-path" d="M5.5 10 0 0h11" fill="#231F20"/></svg>
+                <svg role="img" aria-label="по возрастанию" class="ascending-sort-ico" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="sort-ico-path" d="M5.5 10 0 0h11" fill="#231F20"/></svg>
               </a>
             </li>
           </ul>
@@ -177,120 +180,117 @@
           <ul class="template-list">
             <li class="template-item">
               <div class="template-overlay">
-                <a class="link" href="#"><h3 class="template-name">Sedona</h3></a>
+                <a class="link template-link" href="#"><h3 class="template-name">Sedona</h3></a>
                 <p class="template-description">
                   Информационный сайт<br />
                   для туристов
                 </p>
-                <button class="button template-button" type="button">9 900 Р</button>
+                <button class="button template-button" type="button" aria-label="Добавить макет Sedona в корзину">9 900 Р</button>
               </div>
-                <img class="image"
-                  src="img/sample-cards/img-sedona.jpg"
-                  width="358"
-                  height="578"
-                  alt="седона"
-                />
+              <img class="image"
+                src="img/sample-cards/img-sedona.jpg"
+                width="358"
+                height="578"
+                alt="Пример макета Sedona"
+              />
             </li>
             <li class="template-item">
               <div class="template-overlay">
-                <a class="link" href="#"><h3 class="template-name">Pink app</h3></a>
+                <a class="link template-link" href="#"><h3 class="template-name">Pink app</h3></a>
                 <p class="template-description">
                   Продуктовый лендинг<br />
                   приложения для iOS и Android
                 </p>
-                <button class="button template-button" type="button">9 900 Р</button>
+                <button class="button template-button" type="button" aria-label="Добавить макет Pink app в корзину">9 900 Р</button>
               </div>
               <img class="image"
                 src="img/sample-cards/img-pink.jpg"
                 width="358"
                 height="578"
-                alt="pink-app"
+                alt="Пример макета Pink-app"
               />
             </li>
             <li class="template-item">
               <div class="template-overlay">
-                <a class="link" href="#"><h3 class="template-name">Barbershop</h3></a>
+                <a class="link template-link" href="#"><h3 class="template-name">Barbershop</h3></a>
                 <p class="template-description">
                   Сайт салона красоты.<br />
                   Для мужчин. Да
                 </p>
-                <button class="button template-button" type="button">9 900 Р</button>
+                <button class="button template-button" type="button" aria-label="Добавить макет Barbershop в корзину">9 900 Р</button>
               </div>
                 <img class="image"
                   src="img/sample-cards/img-barbershop.jpg"
                   width="358"
                   height="578"
-                  alt="barbershop"
+                  alt="Пример макета Barbershop"
                 />
             </li>
             <li class="template-item">
               <div class="template-overlay">
-                <a class="link" href="#"><h3 class="template-name">Mishka</h3></a>
+                <a class="link template-link" href="#"><h3 class="template-name">Mishka</h3></a>
                 <p class="template-description">
                   Интернет-магазин<br />
                   вязанных игрушек
                 </p>
-                <button class="button template-button" type="button">9 900 Р</button>
+                <button class="button template-button" type="button" aria-label="Добавить макет Mishka в корзину">9 900 Р</button>
               </div>
                 <img class="image"
                   src="img/sample-cards/img-mishka.jpg"
                   width="358"
                   height="578"
-                  alt="Mishka"
+                  alt="Пример макета Mishka"
                 />
             </li>
             <li class="template-item">
               <div class="template-overlay">
-                <a class="link" href="#"><h3 class="template-name">A plus</h3></a>
+                <a class="link template-link" href="#"><h3 class="template-name">A plus</h3></a>
                 <p class="template-description">
                   Лендинг курсов повышения<br />
                   квалификации
                 </p>
-                <button class="button template-button" type="button">9 900 Р</button>
+                <button class="button template-button" type="button" aria-label="Добавить макет A plus в корзину">9 900 Р</button>
               </div>
                 <img class="image"
                   src="img/sample-cards/img-aplus.jpg"
                   width="358"
                   height="578"
-                  alt="A plus"
+                  alt="Пример макета A plus"
                 />
             </li>
             <li class="template-item">
               <div class="template-overlay">
-                <a class="link" href="#"><h3 class="template-name">Кваст</h3></a>
+                <a class="link template-link" href="#"><h3 class="template-name">Кваст</h3></a>
                 <p class="template-description">
                   Промо-сайт производителя<br />
                   крафтового кваса
                 </p>
-                <button class="button template-button" type="button">9 900 Р</button>
+                <button class="button template-button" type="button" aria-label="Добавить макет Кваст в корзину">9 900 Р</button>
               </div>
                 <img class="image"
                   src="img/sample-cards/img-kvast.jpg"
                   width="358"
                   height="578"
-                  alt="Kvast"
+                  alt="Пример макета Kvast"
                 />
             </li>
           </ul>
           <ul class="pagination-list">
             <li>
-              <a class="link button pagination-item pagination-item-active">1</a>
+              <a class="link button pagination-item pagination-item-active" aria-label="страница 1">1</a>
             </li>
             <li>
-              <a class="link button pagination-item" href="#">2</a>
+              <a class="link button pagination-item" href="#" aria-label="страница 2">2</a>
             </li>
             <li>
-              <a class="link button pagination-item" href="#">3</a>
+              <a class="link button pagination-item" href="#" aria-label="страница 3">3</a>
             </li>
             <li>
-              <a class="link button pagination-item pagination-next-page" href="#">Следующая</a>
+              <a class="link button pagination-item pagination-next-page" href="#" aria-label="Следующая страница">Следующая</a>
             </li>
           </ul>
         </section>
       </div>
-    </main>
-
-    <footer class="footer">
 
       <div class="footer-location">
         <h2 class="hidden-element">Контакты</h2>
@@ -298,7 +298,7 @@
         <section class="location-map">
           <h2  class="hidden-element">Как нас найти</h2>
           <div class="location-image-map"></div>
-          <iframe class="location-interactive-map" src="https://yandex.ru/map-widget/v1/-/CCUFV0toSA" height="416" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+          <iframe aria-hidden="true" class="location-interactive-map" src="https://yandex.ru/map-widget/v1/-/CCUFV0toSA" height="416" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
         </section>
 
         <div class="container">
@@ -309,29 +309,31 @@
                 наб. Реки Карповки,<br />
                 5 лит П, Санкт-Петербург
               </p>
-              <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628">+7 800 555-86-28</a></p>
-              <button class="button footer-contacts-button" type="button">Напишите нам</button>
+              <p class="contacts-phone"><a class="footer-phone link" href="tel:+78005558628" aria-label="Наш номер телефона: +7 800 555-86-28">+7 800 555-86-28</a></p>
+              <a href="contact.html" class="link button footer-contacts-button" aria-label="Написать нам">Напишите нам</a>
             </div>
           </div>
         </div>
       </div>
+    </main>
 
+    <footer class="footer">
       <section class="footer-social container">
         <h2 class="hidden-element">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link link" href="#">
-              <img class="social-ico" src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
+              <img class="social-ico" src="img/social-icons/vk.svg" width="26" height="15" alt="Вконтакте"/>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link link" href="#">
-              <img class="social-ico" src="img/social-icons/facebook.svg" width="12" height="22" alt="facebook"/>
+              <img class="social-ico" src="img/social-icons/facebook.svg" width="12" height="22" alt="Фейсбук"/>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link link" href="#">
-              <img class="social-ico" src="img/social-icons/instagram.svg" width="21" height="21" alt="instagram"/>
+              <img class="social-ico" src="img/social-icons/instagram.svg" width="21" height="21" alt="Инстаграм"/>
             </a>
           </li>
         </ul>
@@ -344,7 +346,7 @@
 
     <section class="modal modal-appeal">
       <h2 class="appeal-head">Напишите нам</h2>
-      <form class="appeal-form" action="#" method="post">
+      <form class="appeal-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="appeal-item">
           <label for="appeal-fullname" class="appeal-item-label">Ваше имя:</label>
           <input class="appeal-item-input appeal-fullname-input" type="text" name="fullname" id="appeal-fullname" placeholder="Имя Фамилия">
@@ -361,5 +363,7 @@
       </form>
       <button class="close" type="button" aria-label="закрыть"></button>
     </section>
+
+    <script src="script/modal.min.js"></script>
   </body>
 </html>
